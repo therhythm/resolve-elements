@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Resolve Doc Builder</title>
+    <title>RKM Doc Builder</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -16,11 +16,86 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>RKM Doc Builder</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <h2>Elements</h2>
+          <form id="elements">
+            <!--
+              TODO:
+              - populate dynamically
+              - allow same element to be added multiple times
+              - created drag and drop interface
+            -->
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="title"> Title
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="break"> Break
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="infobar"> Infobar
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="covers"> Covers
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="text"> Text
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="list"> List
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="sidebyside"> Side-by-side
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"  id="table"> Table
+              </label>
+            </div>
+            <button type="button" class="btn btn-default" id="submit">Build code</button>
+            <button type="button" class="btn btn-default" id="clear">Clear</button>
+          </form>
+        </div>
+        <div class="col-sm-9">
+          <h2>Generated code</h2>
+          <form>
+            <div class="form-group">
+              <textarea id="code" class="form-control" rows="15"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <small>v.0.1.1</small>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Doc Builder script -->
+    <script src="docbuilder.js"></script>
   </body>
 </html>
