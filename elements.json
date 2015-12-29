@@ -1,0 +1,44 @@
+{
+  "elements": {
+    "break": {
+      "name":"Break",
+      "code":
+        "{section:type=source|title=Break}\n\t<hr>\n{section}"
+    },
+    "covers": {
+      "name":"Covers",
+      "code":
+        "{section:type=wysiwyg|title=Covers}\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t<u>\n\t\t\t<font size=\"5\" color=\"#0088CC\" face=\"arial\">\n\t\t\t\tThis Wiki Covers:\n\t\t\t</font>\n\t\t</u>\n\t</div>\n\t<div>\n\t\t<b style=\"font-size: medium;\">\n\t\t\t<br>\n\t\t\t<ul style=\"margin: 0px;\">\n\t\t\t\t<li style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t\t<b>Lorem ipsum dolor sit amet</b>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t</font>\n\t\t\t\t/li>\n\t\t\t\t<li style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t\t<b>consectetur adipiscing elit</b>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t</font>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</b>\n\t</div>\n{section}"
+    },
+    "infobar": {
+      "name":"Infobar",
+      "code":
+        "{section:type=infobar|title=InfoBar}\n\t{infobar:social=true|feedback=true|rating=false|attachments=false|history=false|tags=false|pageInfo=true|height=250}\n{section}"
+    },
+    "list": {
+      "name":"List",
+      "code":
+        "{section:type=wysiwyg|title=List Section}\n\t<u style=\"font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 13px;\">\n\t\t<font size=\"5\" color=\"#0088CC\" face=\"arial\">\n\t\t\tList title\n\t\t</font>\n\t</u>\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t<span style=\"font-family: arial;\">\n\t\t\t<br>\n\t\t\t<font size=\"4\">\n\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\t\t\t</font>\n\t\t</span>\n\t</div>\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 13px;\">\n\t\t<font size=\"3\" face=\"arial\">\n\t\t\t<b>\n\t\t\t\t<br>\n\t\t\t</b>\n\t\t</font>\n\t</div>\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 13px;\">\n\t\t<font size=\"3\" face=\"arial\">\n\t\t\t<b>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</b>\n\t\t</font>\n\t</div>\n\t<div style=\"font-family: Verdana; font-size: 12px;\">\n\t\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 13px;\">\n\t\t\t<br>\n\t\t</div>\n\t</div>\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 12px;\">\n\t\t\t<font size=\"3\" face=\"arial\">\n\t\t\t<b>2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</b>\n\t\t</font>\n\t\t<ul style=\"margin: 0px;\">\n\t\t\t\t<font face=\"arial\" size=\"3\">\n\t\t\t\t Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\t\t\t\t</font>\n\t\t\t</li>\n\t\t</ul>\n\t</div>\n\t<div style=\"font-family: Verdana; font-size: 12px;\">\n\t\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif; font-size: 13px;\">\n\t\t\t<br>\n\t\t</div>\n\t</div>\n{section}"
+    },
+    "sidebyside": {
+      "name":"Side-by-side",
+      "code":
+        "{section:type=wysiwyg,wysiwyg|title=Side by Side Section}\n\t<table style=\"width:100%\" class=\"wiki-builder\">\n\t<tr>\n\t\t<td style=\"width:50%;vertical-align:top;\" class=\"wiki-builder\">\n\t\t\t<div style=\"font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t<u>\n\t\t\t\t\t<font size=\"5\" color=\"#0088CC\" face=\"arial\">\n\t\t\t\t\t\tLeft side title\n\t\t\t\t\t</font>\n\t\t\t\t</u>\n\t\t\t</div>\n\t\t\t<div style=\"color: rgb(0, 0, 0); font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t<br>\n\t\t\t\t<font face=\"arial\" size=\"4\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\tliquip ex ea commodo consequat.\n\t\t\t\t</font>\n\t\t\t</div>\n\t\t</td class=\"wiki-builder\">\n\t\t<td style=\"width:50%;vertical-align:top;\" class=\"wiki-builder\">\n\t\t\t<div style=\"font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t<u>\n\t\t\t\t\t\t<font size=\"5\" color=\"#0088CC\">\n\t\t\t\t\t\t\tRight side title\n\t\t\t\t\t\t</font>\n\t\t\t\t\t</u>\n\t\t\t\t</font>\n\t\t\t</div>\n\t\t\t<div style=\"color: rgb(0, 0, 0); font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t<br>\n\t\t\t\t<font face=\"arial\" size=\"4\">\n\t\t\t\t\tDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id estaborum.\n\t\t\t\t</font>\n\t\t\t</div>\n\t\t</td class=\"wiki-builder\">\n\t</tr>\n\t/<table class=\"wiki-builder\">\n{section}"
+    },
+    "table": {
+      "name":"Table",
+      "code":
+        "{section:type=table|title=Table Section}\n\t{table}\n\t\tColumn Title 1 | Column Title 2 | Column Title 3\n\t\tLorem ipsum dolor sit amet | consectetur adipiscing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua\n\t{table}\n{section}\n"
+    },
+    "text": {
+      "name":"Text",
+      "code":
+        "{section:type=wysiwyg|title=Text Section}\n\t<div style=\"font-size: 13px; color: rgb(0, 0, 0); font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t<u>\n\t\t\t<font color=\"#0088CC\" size=\"5\" face=\"arial\">\n\t\t\t\tSection title\n\t\t\t</font>\n\t\t</u>\n\t</div>\n\t<br>\n\t<font size=\"4\" face=\"arial\">\n\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea\tommodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit\tnim id est laborum.\n\t</font>\n{section}"
+    },
+    "title": {
+      "name":"Title",
+      "code":
+        "{section:type=wysiwyg|title=Title}\n\t<span style=\"color: rgb(0, 136, 204); font-family: arial; font-size: large;\">\n\t\tDocument Title\n\t</span>\n\t<hr>\n{section}"
+    }
+  }
+}
