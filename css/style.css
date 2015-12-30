@@ -1,3 +1,15 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#docbuilder {
+  margin-top: 60px;
+}
+
 #droppable {
   min-height: 791px;
 }

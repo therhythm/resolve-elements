@@ -1,0 +1,56 @@
+{
+  "mistakes": {
+    "shortname": {
+      "name": "Used acronym or shorthand as team name",
+      "feedback": "Use full team name in title"
+    },
+    "longpurpose": {
+      "name": "Purpose is too broad or long",
+      "feedback": "Be as brief as possible when describing purpose of document"
+    },
+    "sectionnumbering": {
+      "name": "Numbering of sections is wrong",
+      "feedback": "Pay attention to correct numbering of sections"
+    },
+    "referencegraphic": {
+      "name": "Referenced graphic in primary text",
+      "feedback": "Do not reference graphics in primary text"
+    },
+    "titlewithintitle": {
+      "name": "Used titles within title section",
+      "feedback": "Do not use titles within title sections"
+    },
+    "stepsnotes": {
+      "name": "Formatting of steps and notes is wrong",
+      "feedback": "Steps translate to numbers, notes to bullets"
+    },
+    "wrongquotes": {
+      "name": "Used quotes when not quoting from source",
+      "feedback": "Only use quotes when referencing source material"
+    },
+    "allcaps": {
+      "name": "Used all caps when not quoting from source",
+      "feedback": "Do not use all caps case, unless directly quoting from source material"
+    },
+    "bullets": {
+      "name": "Used bullet points in primary text",
+      "feedback": "Do not use bullet points in primary text"
+    },
+    "incompletesentence": {
+      "name": "Incomplete or shortened sentence",
+      "feedback": "Always write full sentences"
+    },
+    "acronym": {
+      "name": "Used acronym without previously defining it",
+      "feedback": "Do not use acronyms unless defined previously in the document"
+    },
+    "documenttype": {
+      "name": "Used wrong document type for section",
+      "feedback": "Use correct document type for each section"
+    },
+    "spelling": {
+      "name": "Spelling error",
+      "feedback": "Pay attention to spelling errors"
+    }
+  }
+}

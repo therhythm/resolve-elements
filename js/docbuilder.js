@@ -2,10 +2,22 @@ $(function() {
   var elements = [];
   var elementCode = [];
 
-  /* load code snippets from JSON file, keep a seperate array of available
-      elements, and a seperate array for selected elements
-      Place elements on page
-      Make elements drag-n-drop*/
+  var mistakes = [];
+  var mistakeFeedback = [];
+
+
+  /**
+   * clear by default on page load
+   */
+  clear();
+
+  /**
+   * load code snippets from JSON file, keep a seperate array of available
+   * elements
+   * Place elements on page
+   * Make elements drag-n-drop
+   * Bind event handlers for form buttons
+   */
   $.getJSON('js/elements.json', function(data) {
     $.each(data.elements, function(key,val) {
         elements.push(key);
@@ -30,12 +42,40 @@ $(function() {
         });
     });
 
-    /* build the code */
     $('#submit').click(function(event) {
       buildCode(event);
     });
+
+    $('#clear').click(function(event) {
+      clearBuilder();
+    });
   });
 
+ /**
+  * Load possible mistakes from JSON file, keep a seperate array of
+  * possible mistakes
+  * Place possible mistakes on page
+  * Bind event handlers for form buttons
+  */
+  $.getJSON('js/review.json', function(data) {
+    $.each(data.mistakes, function(key,val) {
+      mistakes.push(key);
+      mistakeFeedback[key] = val.feedback;
+      $('#mistakes').append('<div class="checkbox"><label><input type="checkbox" id="' + key + '">' + val.name + '</label></div>')
+    });
+
+    $('#review').click(function(event) {
+      buildReview(event);
+    });
+
+    $('#clearreview').click(function(event) {
+      clearReview();
+    });
+  });
+
+  /**
+   * Build the code
+   */
   function buildCode(event) {
     var code = "";
     var snippets = $('#droppable').children()
@@ -47,17 +87,41 @@ $(function() {
     event.preventDefault();
   }
 
+
+  /**
+   * Build the review
+   */
+  function buildReview(event) {
+    var timestamp = new Date();
+    var review = $('#rkmname').val() + ' ' + timestamp.toLocaleString() + '\n';
+    var checkboxes = $('#mistakes div label input');
+    for (var i = 0; i < checkboxes.length; i++) {
+      if(checkboxes[i].checked) {
+        review = review + '- ' + mistakeFeedback[checkboxes[i].id] + '\n';
+      }
+    }
+    $('#feedback').val(review);
+    $('#feedback').focus().select();
+    event.preventDefault();
+  }
+
   /* clear build area, code area */
-  function clear() {
+  function clearBuilder() {
     $('#code').val('');
     $('#droppable').empty();
   }
 
-  /* clear on button click */
-  $('#clear').click(function(event) {
-    clear();
-  });
+  /* clear review checkboxes, feedback area */
+  function clearReview() {
+    var checkboxes = $('#mistakes div label input');
+    for (var i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = false;
+    }
+    $('#feedback').val('');
+  }
 
-  /* clear by default on page load */
-  clear();
+  function clear() {
+    clearBuilder();
+    clearReview();
+  }
 });
