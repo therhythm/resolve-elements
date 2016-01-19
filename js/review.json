@@ -51,6 +51,10 @@
     "spelling": {
       "name": "Spelling error",
       "feedback": "Pay attention to spelling errors"
+    },
+    "unexplainedgraphic": {
+      "name": "Used graphic or chart without explaining its usage",
+      "feedback": "Do not use graphics or charts without explanation of their purpose"
     }
   }
 }
