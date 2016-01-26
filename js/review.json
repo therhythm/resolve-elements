@@ -55,6 +55,42 @@
     "unexplainedgraphic": {
       "name": "Used graphic or chart without explaining its usage",
       "feedback": "Do not use graphics or charts without explanation of their purpose"
+    },
+    "incompletehours": {
+      "name": "Did not use AM/PM with hours",
+      "feedback": "Always include AM/PM with time"
+    },
+    "multipledocuments": {
+      "name": "Split sections about same tool across documents",
+      "feedback": "Consolidate all documents about one tool in one document"
+    },
+    "missingoverview": {
+      "name": "Missing Overview document",
+      "feedback": "Always create an overview document for tools, technologies, or equipment"
+    },
+    "missingaccess": {
+      "name": "Missing Access & Support",
+      "feedback": "Always create an access & support document for tools"
+    },
+    "nonessentialtool": {
+      "name": "Created document for non-essential tool",
+      "feedback": "Tools that are not essential to the functioning of the team do not go in Resolve"
+    },
+    "punctuation": {
+      "name": "Incorrect or missing punctuation",
+      "feedback": "Pay attention to correct punctuation. Sentences always in with a period, even within a list"
+    },
+    "missingcolon": {
+      "name": "Missing colon before a link",
+      "feedback": "Always use a colon before a link"
+    },
+    "missingresult": {
+      "name": "Step is missing result",
+      "feedback": "A step should always contain the expected result"
+    },
+    "romannumeral": {
+      "name": "Used roman numerals instead of numbers",
+      "feedback": "Always use numbers in place of roman numerals"
     }
   }
 }
