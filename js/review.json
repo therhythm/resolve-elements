@@ -91,6 +91,10 @@
     "romannumeral": {
       "name": "Used roman numerals instead of numbers",
       "feedback": "Always use numbers in place of roman numerals"
+    },
+    "incompleteprocedure": {
+      "name": "Procedure is incomplete",
+      "feedback": "Always list all steps involved in a procedure"
     }
   }
 }
