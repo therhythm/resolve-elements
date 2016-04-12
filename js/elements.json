@@ -8,12 +8,12 @@
     "covers": {
       "name":"Covers",
       "code":
-        "{section:type=wysiwyg|title=Covers}\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t<u>\n\t\t\t<font size=\"5\" color=\"#0088CC\" face=\"arial\">\n\t\t\t\tThis Wiki Covers:\n\t\t\t</font>\n\t\t</u>\n\t</div>\n\t<div>\n\t\t<b style=\"font-size: medium;\">\n\t\t\t<br>\n\t\t\t<ul style=\"margin: 0px;\">\n\t\t\t\t<li style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t\t<b>Lorem ipsum dolor sit amet</b>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t</font>\n\t\t\t\t/li>\n\t\t\t\t<li style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t\t<b>consectetur adipiscing elit</b>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t</font>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</b>\n\t</div>\n{section}"
+        "{section:type=wysiwyg|title=Covers}\n\t<div style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t<u>\n\t\t\t<font size=\"5\" color=\"#0088CC\" face=\"arial\">\n\t\t\t\tThis Wiki Covers:\n\t\t\t</font>\n\t\t</u>\n\t</div>\n\t<div>\n\t\t<b style=\"font-size: medium;\">\n\t\t\t<br>\n\t\t\t<ul style=\"margin: 0px;\">\n\t\t\t\t<li style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t\t<b>Lorem ipsum dolor sit amet</b>\n\t\t\t\t\t\t<br>\n\t\t\t\t\t</font>\n\t\t\t\t</li>\n\t\t\t\t<li style=\"font-family: Verdana, Helvetica, Arial, sans-serif;\">\n\t\t\t\t\t<font face=\"arial\">\n\t\t\t\t\t\t<b>consectetur adipiscing elit</b>\n\t\t\t\t\t\t\t<br>\n\t\t\t\t\t</font>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</b>\n\t</div>\n{section}"
     },
     "infobar": {
-      "name":"Infobar",
+      "name":"Footer",
       "code":
-        "{section:type=infobar|title=InfoBar}\n\t{infobar:social=true|feedback=true|rating=false|attachments=false|history=false|tags=false|pageInfo=true|height=250}\n{section}"
+        "{section:type=infobar|title=InfoBar}\n\t\t{infobar:social=false|feedback=true|rating=false|attachments=false|history=false|tags=false|pageInfo=true|height=270}\n{section}\n{section:type=wikidoc|title=Footer}\n\t\t#includeForm(\"NtOpFTR.FooterAnnouncementMod\")\n{section}\n{section:type=source|title=Feedback Button Style}\n<style>\n\t\t.x-tab-button {\n\t\t\t\tborder: 1px solid #CCC !important;\n\t\t\t\tborder-radius: 3px !important;\n\t\t\t\tpadding: 3px 5px !important;\n\t\t}\n</style>\n{section}"
     },
     "list": {
       "name":"List",
@@ -28,7 +28,7 @@
     "table": {
       "name":"Table",
       "code":
-        "{section:type=table|title=Table Section}\n\t{table}\n\t\tColumn Title 1 | Column Title 2 | Column Title 3\n\t\tLorem ipsum dolor sit amet | consectetur adipiscing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua\n\t{table}\n{section}\n"
+        "{section:type=table|title=Table Section}\n\t{table}\n\t\tColumn Title 1 | Column Title 2 | Column Title 3\n\t\tLorem ipsum dolor sit amet | consectetur adipiscing elit | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua\n\t{table}\n{section}"
     },
     "text": {
       "name":"Text",
