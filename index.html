@@ -34,8 +34,8 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="#docbuilder">Doc Builder</a></li>
+              <li><a href="#editor">WYSYWIG HTML Editor</a></li>
               <li><a href="#stamp">Timestamp</a></li>
-              <li><a href="https://html-online.com/editor/" target="_blank">WYSYWIG HTML Editor</a></li>
             </ul>
             <form class="navbar-form navbar-right">
               <div class="form-group">
@@ -76,6 +76,20 @@
         </div>
       </div>
     </section>
+    <section class="container" id="editor">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Editor</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <textarea name="ckEditor" id="ckEditor" rows="10" cols="80">
+
+          </textarea>
+        </div>
+      </div>
+    </section>
     <section class="container" id="stamp">
       <div class="row">
         <div class="col-md-12">
@@ -105,7 +119,7 @@
     <footer class="container">
       <div class="row">
         <div class="col-md-12">
-          <small>v.0.4.0</small>
+          <small>v.0.5.0</small>
         </div>
       </div>
     </footer>
@@ -114,7 +128,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="http://cdn.ckeditor.com/4.5.9/full/ckeditor.js"></script>
     <!-- Doc Builder script -->
     <script src="js/docbuilder.js"></script>
+    <!-- CKEditor script -->
+    <script>
+        CKEDITOR.replace( 'ckEditor' );
+    </script>
   </body>
 </html>
