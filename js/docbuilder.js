@@ -2,10 +2,6 @@ $(function() {
   var elements = [];
   var elementCode = [];
 
-  var mistakes = [];
-  var mistakeFeedback = [];
-
-
   /**
    * clear by default on page load
    */
@@ -52,25 +48,13 @@ $(function() {
   });
 
  /**
-  * Load possible mistakes from JSON file, keep a seperate array of
-  * possible mistakes
-  * Place possible mistakes on page
   * Bind event handlers for form buttons
   */
-  $.getJSON('js/review.json', function(data) {
-    $.each(data.mistakes, function(key,val) {
-      mistakes.push(key);
-      mistakeFeedback[key] = val.feedback;
-      $('#mistakes').append('<div class="checkbox"><label><input type="checkbox" id="' + key + '">' + val.name + '</label></div>')
-    });
-
-    $('#review').click(function(event) {
-      buildReview(event);
-    });
-
-    $('#clearreview').click(function(event) {
-      clearReview();
-    });
+  $('#buildstamp').click(function(event) {
+    buildStamp(event);
+  });
+  $('#clearstamp').click(function(event) {
+    clearStamp();
   });
 
   /**
@@ -89,19 +73,13 @@ $(function() {
 
 
   /**
-   * Build the review
+   * Build the timestmap
    */
-  function buildReview(event) {
+  function buildStamp(event) {
     var timestamp = new Date();
-    var review = $('#rkmname').val() + ' ' + timestamp.toLocaleString() + '\n';
-    var checkboxes = $('#mistakes div label input');
-    for (var i = 0; i < checkboxes.length; i++) {
-      if(checkboxes[i].checked) {
-        review = review + '- ' + mistakeFeedback[checkboxes[i].id] + '\n';
-      }
-    }
-    $('#feedback').val(review);
-    $('#feedback').focus().select();
+    var stamp = $('#rkmname').val() + ' ' + timestamp.toLocaleString() + '\n';
+    $('#timestamp').val(stamp);
+    $('#timestamp').focus().select();
     event.preventDefault();
   }
 
@@ -111,17 +89,13 @@ $(function() {
     $('#droppable').empty();
   }
 
-  /* clear review checkboxes, feedback area */
-  function clearReview() {
-    var checkboxes = $('#mistakes div label input');
-    for (var i = 0; i < checkboxes.length; i++) {
-      checkboxes[i].checked = false;
-    }
-    $('#feedback').val('');
+  /* clear timestamp area */
+  function clearStamp() {
+    $('#timestamp').val('');
   }
 
   function clear() {
     clearBuilder();
-    clearReview();
+    clearStamp();
   }
 });
