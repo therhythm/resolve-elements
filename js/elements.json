@@ -39,6 +39,11 @@
       "name":"Title",
       "code":
         "{section:type=wysiwyg|title=Title}\n\t<span style=\"color: rgb(0, 136, 204); font-family: arial; font-size: large;\">\n\t\tDocument Title\n\t</span>\n\t<hr>\n{section}"
+    },
+    "style": {
+      "name":"Styles",
+      "code":
+        "{section:type=source|title=RKM Styles}\n\t<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" integrity=\"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u\" crossorigin=\"anonymous\">\n\t<style>\n\t\th1 {color: #0088CC;}\n\t\th2 {color: #555;}\n\t\th3 {color: #888;}\n\t\ta:link, a:visited {color:#0088cc !important; text-decoration: none;}\n\t\ta:hover {color:#d71d24 !important; text-decoration: underlined;}\n\t\t.container-fluid {font-size: 1.2em;}\n\t\timg { border: 1px solid rgba(0, 0, 0, 1); box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2); margin: 1em;}\n\t\t.bg-warning {padding:15px;}\n\t\t.x-tab-button {border: 1px solid #CCC !important; border-radius: 3px !important; padding: 3px 5px !important;}\n\t</style>\n{section}"
     }
   }
 }
